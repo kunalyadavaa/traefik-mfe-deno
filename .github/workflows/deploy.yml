@@ -31,6 +31,6 @@ jobs:
         with:
           project: "kunalyadava-traefik-mfe-90"
           entrypoint: "main.ts"
-          root: "."
+          root: "build"
           
           
