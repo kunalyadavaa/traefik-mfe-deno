@@ -24,13 +24,13 @@ jobs:
           deno-version: v2.x
 
       - name: Build step
-        run: "docker compose up --build"
+        run: "deno task build"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "kunalyadava-traefik-mfe-32"
-          entrypoint: "app/server.ts"
-          root: ""
+          project: "kunalyadava-traefik-mfe-24"
+          entrypoint: "main.ts"
+          root: "."
           
           
